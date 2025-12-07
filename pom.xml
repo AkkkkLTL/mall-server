@@ -6,14 +6,24 @@
 
 	<groupId>com.akkkkltl.mall</groupId>
 	<artifactId>mall</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>mall</name>
 	<description>聚合服务</description>
 
+	<properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <java.version>21</java.version>
+    </properties>
+
 	<modules>
+		<module>mall-admin</module>
+		<module>mall-common</module>
+		<module>mall-gateway</module>
 		<module>mall-coupon</module>
+		<module>mall-generator</module>
 		<module>mall-member</module>
 		<module>mall-order</module>
 		<module>mall-product</module>
